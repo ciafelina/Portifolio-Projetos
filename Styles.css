@@ -1,0 +1,364 @@
+/* ------------ PARTE DO GERAL ----------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    background-color: pink;
+}
+
+.Interface{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+/* ------------ PARTE DO CABEÇARIO ----------- */
+header{
+    padding: 40px 4%;
+}
+.Logo h1{
+    font-size: 40px;
+}
+.Logo i{
+    color: red;
+}
+.Logo h1 span{
+    color: rgb(255, 0, 0);
+}
+
+header > .Interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    transition: .2s;
+    color: rgb(59, 55, 55);
+}
+header a:hover{
+    transform: scale(1.05);
+    color: black;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+    transition: 4s;
+}
+.Redes-Sociais a {
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 35px;
+}
+/* ------------ PARTE DO INTRDUÇÂO DO SITE ----------- */
+section.Introducao-site{
+    padding: 40px 4%;
+}
+section.Introducao-site .flex{
+    align-items: center;
+    justify-content: center;
+}
+.Introducao-text h1{
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+.Introducao-text h1 span{
+    color: red;
+}
+.Introducao-text p{
+    font-size: 20px;
+    line-height: 45px;
+    margin-bottom: 40px;
+}
+.introducao-img img{
+    width: 600px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.Button-Contato a button{
+    padding: 15px 5%;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.Button-Contato a button:hover{
+    transform: scale(1.05);
+}
+/* ------------ PARTE SOBRE MIM ----------- */
+section.Sobre-Mim{
+    padding: 40px 4%;
+    margin-top: 80px;
+
+}
+section.Sobre-Mim .flex{
+    align-items: center;
+    justify-content: center;
+}
+.Text-SobreMim p{
+    font-size: 20px;
+    line-height: 45px;
+    margin-left: 60px;
+    margin-bottom: 80px;
+}
+.Text-SobreMim h1{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+
+}
+.Text-SobreMim h1 span{
+    color: red;
+}
+.img-sobre-mim img{
+    width: 600px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+}
+.Redes-Sociais-Sobre a{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 35px;
+    transition: .4s;
+    color: red;
+    background-color: black;
+    border-radius: 100%;
+    margin-left: 40px;
+}
+.Redes-Sociais-Sobre a:hover{
+    transform: scale(1.05);
+}
+.Redes-Sociais-Sobre {
+    margin-left: 60px;
+}
+/* ------------ PARTE DE CONHECIMENTOS ----------- */
+section.Projetos-Site{
+    padding: 40px 4%;
+    margin-top: 80px;
+
+}
+section.Projetos-Site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 80px;
+}
+.Content-Conhecimentos{
+    display: flex;
+    padding: 20px 2%;
+    height: 150px;
+    width: 900px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 15px;
+}
+.Content-Conhecimentos p{
+    margin-top: 10px;
+}
+.Content-Conhecimentos img{
+    width: 300px;
+    margin-right: 50px;
+}
+.Projetos-Site h1{
+    text-align: center;
+    font-size: 60px;
+}
+.Projetos-Site span{
+    color: red;
+}
+/*---------PARTE DO PROJETOS-------------*/
+section.Content-Project{
+    padding: 40px 4%;
+    margin-top: 80px;
+
+}
+section.Content-Project .flex{
+    justify-content: space-around;
+}
+.Content-Project h1{
+    font-size: 60px;
+    text-align: center;
+}
+.Content-Project span{
+    color: red;
+}
+.Projects{
+    margin-top: 80px;
+    height: 600px;
+    width: 700px;
+    background-size: cover;
+    margin-left: 120px;
+    border-radius: 40px;
+    background-position: 0% 100%;
+    transition: .7s;
+    cursor: pointer;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+.Projects:hover{
+    background-position: 100% 100%;
+}
+.Overly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.616);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .6s;
+}
+.Overly:hover{
+    opacity: 1;
+}
+/*---------PARTE DO FORMULARIO-------------*/
+section.Formulario{
+    padding: 80px 4%;
+}
+section.Formulario h2{
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 40px;
+}
+section.Formulario span{
+    color: red;
+}
+form{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+form input, form textarea{
+    width: 100%;
+    background-color: rgb(41, 39, 39);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+}
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+.btn-Enviar input{
+    cursor: pointer;
+    transition: .4s;
+    font-size: 18px;
+}
+.btn-Enviar input:hover{
+    transform: scale(1.01);
+}
+/*---------PARTE DO RODAPE-------------*/
+
+footer{
+    padding: 40px 4%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+footer .flex{
+    justify-content: space-between;
+
+}
+footer .line-fotter{
+    padding: 20px 0;
+}
+footer .line-fotter h1{
+    font-size: 50px;
+}
+footer .line-fotter span{
+    color: red;
+}
+.borda{
+    border-top: 2px solid red;
+}
+footer .line-fotter p{
+    color: red;
+    font-size: 22px;   
+}
+footer .line-fotter p a{
+    color: black;
+    font-size: 22px;   
+}
+/*---------PARTE RESPONSIVEL-------------*/
+
+@media screen and (max-width: 1020px) {
+    
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    .meuu-desptop, .Redes-Sociais{
+        display: none;
+    }
+    .introducao-img img{
+        width: 300px;
+        margin-bottom: 40px;
+    }
+    .Text-SobreMim h1,.Text-SobreMim p{
+        margin-left: 30px;   
+    }
+    .Redes-Sociais-Sobre{
+        margin-right: 20px;
+        margin-left: 0;
+        margin-bottom: 80px;
+    }
+    .Redes-Sociais-Sobre a{
+        padding: 10px 20px;
+        margin-left: 20px;
+    }
+    .img-sobre-mim img{
+        width: 300px;
+    }
+    .Content-Conhecimentos{
+        height: 400px;
+        width: 250px;
+        flex-direction: column;
+    }
+    .Content-Conhecimentos img{
+        width: 100px;
+        margin-left: 30%;
+    }
+    .Content-Conhecimentos p{
+        padding: 20px 2%;
+    }
+    .Projects{
+        height: 400px;
+        width: 300px; 
+        margin-left: 20px; 
+    }
+    footer .line-fotter p a{
+        font-size: 18px;   
+    }
+    .Projetos-Site h1{
+        font-size: 50px;
+    }
+}
