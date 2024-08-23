@@ -8,7 +8,7 @@
 }
 html {
     scroll-behavior: smooth;
-}
+  }
 body{
     height: 100vh;
     background-color: pink;
@@ -278,6 +278,8 @@ form textarea{
 .btn-Enviar input:hover{
     transform: scale(1.01);
 }
+
+
 /*---------PARTE DO RODAPE-------------*/
 
 footer{
@@ -361,4 +363,58 @@ footer .line-fotter p a{
     .Projetos-Site h1{
         font-size: 50px;
     }
+}
+
+/*ESTILOS DE ANIMAÇÂO DO SITE*/
+.Sobre-Mim{
+    margin-left: 300px;
+    opacity: 0;
+    transition: .5s;
+}
+.Sobre-Mim.rolagem{
+    opacity: 1;
+    margin-left: 0px
+}
+.Projetos-Site{
+    margin-left: 300px;
+    opacity: 0;
+    transition: .5s;
+}
+.Projetos-Site.rolagem{
+    opacity: 1;
+    margin-left: 0px
+}
+.Formulario{
+    margin-left: 300px;
+    opacity: 0;
+    transition: .5s;
+}
+.Formulario.rolagem{
+    opacity: 1;
+    margin-left: 0px
+}
+.Content-Project{
+    margin-left: 300px;
+    opacity: 0;
+    transition: .5s;
+}
+.Content-Project.rolagem{
+    opacity: 1;
+    margin-left: 0px;
+}
+/*VERIFICAÇÂO DE CAMPOS*/
+.Formulario .VerificaNome{
+    color: red;
+    font-weight: 800;
+    display: none;
+}
+.Formulario .VerificaEmail{
+    color: red;
+    font-weight: 800;
+    display: none;
+}
+.Formulario .VerificaTelefone{
+    color: red;
+    font-weight: 800;
+    display: none;
 }

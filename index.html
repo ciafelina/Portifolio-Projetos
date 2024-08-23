@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="Formulario.js"></script>
-    <script src="SlowSection.js"></script>
+    <script src="AnimationScroll.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <header>
@@ -43,7 +44,7 @@
         <section class="Introducao-site" id = "Home">
             <div class="Interface">
                 <div class="flex">
-                    <div class="Introducao-text">
+                    <div class="Introducao-text" id="Introducao-text">
                         <h1>Seja bem vindo ao meu <span>Portifolio</span> <i class="bi bi-lightbulb-fill"></i></h1>
                         <p>Olá! Sou Jose Thiago, um desenvolvedor dedicado a transformar ideias em realidade através da programação. Neste portfólio, você encontrará uma seleção dos meus melhores trabalhos. Explore e sinta-se à vontade para entrar em contato para colaborações ou oportunidades.</p>
 
@@ -89,31 +90,31 @@
             <div class="Interface">
                 <h1> Meus <span>Conhecimentos</span>   <i class="bi bi-book-fill"></i></h1>
                 <div class="flex">
-                    <div class="Content-Conhecimentos">
+                    <div class="Content-Conhecimentos" id="Delphi" > 
                         <img src="Imagens/DELPHI.png" alt="">
                         <p>Tenho um ano de experiência em Delphi, desenvolvendo interfaces e manipulando bancos de dados para fornecer dados aos usuários. Realizo manutenções em sistemas e crio novas funcionalidades conforme necessário.</p>
                     </div>
-                    <div class="Content-Conhecimentos">
+                    <div class="Content-Conhecimentos" id="CSS">
                         <img src="Imagens/CSS.png" alt="">
                         <p>Possuo conhecimento em CSS para estilizar e criar layouts responsivos, garantindo uma interface atraente e funcional para websites e aplicações web.</p>
                     </div>
                 </div>
                 <div class="flex">
-                    <div class="Content-Conhecimentos">
+                    <div class="Content-Conhecimentos" id="HTML">
                         <img src="Imagens/HTML.png" alt="">
                         <p>Tenho experiência em HTML para estruturar conteúdo web de forma semântica e acessível, utilizando as melhores práticas para desenvolvimento de páginas estáticas e dinâmicas.</p>
                     </div>
-                    <div class="Content-Conhecimentos">
+                    <div class="Content-Conhecimentos" id="PHP">
                         <img src="Imagens/PHP.png" alt="">
                         <p>Estou em fase de aprendizado em PHP, focando em desenvolver habilidades para criar aplicações web dinâmicas e interativas, para manipulação de dados e interação com bancos de dados.</p>
                     </div>
                 </div>
                 <div class="flex">
-                    <div class="Content-Conhecimentos">
+                    <div class="Content-Conhecimentos" id="Python">
                         <img src="Imagens/PYTHON.png" alt="">
                         <p>Estou familiarizado com Python, utilizando-o para desenvolver scripts e aplicações para automação, análise de dados e desenvolvimento web, aproveitando sua simplicidade e poder de expressão.</p>
                     </div>
-                    <div class="Content-Conhecimentos">
+                    <div class="Content-Conhecimentos" id="SQL">
                         <img src="Imagens/SQL.png" alt="">
                         <p>Tenho experiência sólida em SQL, utilizando-o para projetar e manipular bancos de dados, criar consultas complexas e otimizar o desempenho de consultas para sistemas e aplicações.</p>
                     </div>
@@ -144,17 +145,23 @@
             </div>
         </section>
 
-        <section class="Formulario">
+        <section class="Formulario" id="Formulario">
             <div class="interface">
-                <h2 class="Titulo">FALA <span>COMIGO</span></h2>
+                <h2 class="Titulo">FALE COMIGO</h2>
 
                 <form action="">
-                    <input type="text" name="" id="" placeholder="Seu Nome Completo:" required>
-                    <input type="text" name="" id="" placeholder="Seu E-mail:" required>
-                    <input type="text" name="" id="" placeholder="Seu Celular:">
-                    <textarea name="" id="" placeholder="Sua Menssagem" required></textarea>
+                    <span class="VerificaNome">Nome Tende de ser Obrigatorio, Verique</span>
+                    <input type="text" name="" id="Name" placeholder="Seu Nome Completo:">
+
+                    <span class="VerificaEmail">Email Invalido ou Vazio, Verique</span>
+                    <input type="text" name="" id="email" placeholder="Seu E-mail:">
+
+                    <span class="VerificaTelefone" >Telefone Invalido ou Vazio, Verique</span>
+                    <input type="text" name="" id="telefone" placeholder="Seu Celular:">
+                    
+                    <textarea name="" id="Menssagem" placeholder="Sua Menssagem"></textarea>
                     <div class="btn-Enviar">
-                        <input onclick="minhaFuncao()" type="submit" value="ENVIAR" id="redirectButton">
+                        <input onclick="validarCampos(event)" type="submit" value="ENVIAR" id="redirectButton">
                     </div>
                 </form>
             </div>
